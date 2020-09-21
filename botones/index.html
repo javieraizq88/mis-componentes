@@ -10,3 +10,146 @@
     <button type="button" class="btn default">default</button>
     <button type="button" class="btn neutro">neutro</button>
 </div>
+
+<hr />
+<br />
+
+<h2>Botones con loader</h2>
+
+<p>
+    Para cambiar el ancho hay que cambiar los padding y para el alto es el line-height
+</p>
+<div class="container">
+    <button class="button-loader--rectangular-default" progress-button="bn.progressVar()"
+        pb-direction="horizontal">Recalcular</button>
+    <button class="button-loader--rectangular-default btn-info" progress-button="bn.progressVar()"
+        pb-direction="horizontal">Recalcular</button>
+    <button class="button-loader--rectangular-default btn-danger" progress-button="bn.progressVar()"
+        pb-direction="horizontal">Recalcular</button>
+    <button class="button-loader--rectangular-default btn-success" progress-button="bn.progressVar()"
+        pb-direction="horizontal">Recalcular</button>
+    <button class="button-loader--rectangular-default btn-neutro" progress-button="bn.progressVar()"
+        pb-direction="horizontal">Recalcular</button>
+</div>
+
+<hr />
+<br />
+
+<h2>Botones con dropdown</h2>
+
+<div class="container">
+    <div class="dropdown dropdown-btn inline-block" uib-dropdown is-open="status.isopen">
+        <a id="dropDownOne" class="btn primary btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Primary</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownOne">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown dropdown-btn ml-15 inline-block" uib-dropdown is-open="status.isopen1">
+        <a id="dropDownTwo" class="btn info btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Info</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownTwo">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown dropdown-btn ml-15 inline-block" uib-dropdown is-open="status.isopen2">
+        <a id="dropDownThree" class="btn danger btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Danger</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownThree">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown dropdown-btn ml-15 inline-block" uib-dropdown is-open="status.isopen3">
+        <a id="dropDownFour" class="btn success btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Success</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownFour">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown dropdown-btn ml-15 inline-block" uib-dropdown is-open="status.isopen4">
+        <a id="dropDownFive" class="btn default btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Default</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownFive">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown dropdown-btn ml-15 inline-block" uib-dropdown is-open="status.isopen6">
+        <a id="dropDownSix" class="btn neutro btn dropdown-toggle mr-0" uib-dropdown-toggle="" aria-haspopup="true"
+            aria-expanded="false"><span><i class="ion-navicon"></i></span> Btn Neutro</a>
+        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="dropDownSix">
+            <li><a href="javascript:void(0);"> Opción 1</a></li>
+            <li><a href="javascript:void(0);"> Opción 2</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<hr />
+<br />
+
+<h2>Botones con Acciones</h2>
+
+<div class="container">
+    <a class="btn-fill btn-fill__data-bar info-btn" href="javascript:void(0);"
+        ng-click="vm.botonDataBar = !vm.botonDataBar">
+        <div class="cont-animacion">
+            <span></span>
+            <i class="ion-ios-arrow-down" ng-class="{'voltea':vm.botonDataBar , '':!vm.botonDataBar}"></i>
+        </div>
+    </a>
+
+    <a class="btn-fill btn-fill__data-bar info-btn" href="javascript:void(0);"
+        ng-click="vm.botonDataBar2 = !vm.botonDataBar2">
+        <div class="cont-animacion">
+            <span></span>
+            <i class="ion-ios-arrow-right" ng-class="{'voltea2':vm.botonDataBar2 , '':!vm.botonDataBar2}"></i>
+        </div>
+    </a>
+
+    <a class="btn-open-aside" href="javascript:void(0);">
+        <i class="ion-ios-arrow-right"></i>
+    </a>
+
+    <span class="dropdown seleccion-marca" dropdown on-toggle="toggled(open)">
+        <a href class="dropdown-toggle" dropdown-toggle>
+            <span><i class="ion-navicon"></i></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="javascript:void(0);"><i class="icon-icon-edit-empty"></i> Editar</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="ion-ios-chatbubble-outline"
+                        ng-class="{'text-info': dato.notificacion == true}"></i> Comentarios</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="icon-icon-clip"></i> Archivos Adjuntos</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="ion-ios-download-outline"></i> Descargar Detalle</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><i class="ion-clipboard"></i> Ver Bitacora</a>
+            </li>
+        </ul>
+    </span>
+
+    <div class="come-back inline-block" ng-class="{'active':vm.flechaLink , '':!vm.flechaLink}"
+        ng-click="vm.flechaLink = !vm.flechaLink">
+        <div class="box-back">
+            <i class="ion-android-arrow-back"></i>
+        </div>
+    </div>
+
+</div>
+
